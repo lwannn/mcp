@@ -101,7 +101,6 @@ class MCPClient:
                 tools_info += "\n- San Francisco: latitude=37.7749, longitude=-122.4194"
                 tools_info += "\n- Los Angeles: latitude=34.0522, longitude=-118.2437"
                 tools_info += "\n- New York: latitude=40.7128, longitude=-74.0060"
-                tools_info += "\n- Detroit: latitude=42.3314, longitude=-83.0458"
                 tools_info += "\n- Beijing: latitude=39.9042, longitude=116.4074"
                 tools_info += "\nFor other cities, use approximate coordinates or ask the user to provide them."
                 
