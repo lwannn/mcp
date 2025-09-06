@@ -1,0 +1,6 @@
+{
+  "provider": "qwen",
+  "model": "qwen-turbo",
+  "api_key": "your-dashscope-api-key-here",
+  "max_tokens": 2000
+}
