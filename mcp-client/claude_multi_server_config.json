@@ -1,0 +1,42 @@
+{
+  "model": {
+    "provider": "anthropic",
+    "model": "claude-3-5-sonnet-20241022",
+    "api_key": "your-anthropic-api-key-here",
+    "max_tokens": 1000
+  },
+  "servers": [
+    {
+      "name": "weather",
+      "description": "天气预报服务 - 提供天气查询和预警功能",
+      "script_path": "../mcp-server/weather/weather.py",
+      "enabled": true,
+      "config": {
+        "timeout": 30
+      }
+    },
+    {
+      "name": "calculator",
+      "description": "数学计算服务 - 提供基础数学运算和三角函数",
+      "script_path": "../mcp-server/calculator/calculator.py",
+      "enabled": true,
+      "config": {
+        "precision": 10
+      }
+    },
+    {
+      "name": "text_processor",
+      "description": "文本处理服务 - 提供文本分析、转换和提取功能",
+      "script_path": "../mcp-server/text_processor/text_processor.py",
+      "enabled": true,
+      "config": {
+        "max_text_length": 10000
+      }
+    }
+  ],
+  "global_settings": {
+    "concurrent_connections": 3,
+    "connection_timeout": 15,
+    "retry_attempts": 2
+  }
+}
